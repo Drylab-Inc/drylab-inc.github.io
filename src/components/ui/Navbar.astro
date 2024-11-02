@@ -25,11 +25,13 @@ const navLinks = [
 ];
 
 import bars from "../../assets/bars.svg";
-import brand from "../../assets/brand.svg";
+// import brand from "../../assets/brand.jpg";
+import brand from "../../assets/drylabFull.png";
+
 ---
 
 <div
-  class="bg-[#fff] fixed w-full top-0 z-10 py-[30px] h-auto flex justify-center"
+  class="bg-[#E7E6DD] fixed w-full top-0 z-10 py-[30px] h-auto flex justify-center"
 >
   <nav
     aria-label="Main Navigation"
@@ -38,16 +40,17 @@ import brand from "../../assets/brand.svg";
     style="max-width: 1280px;"
   >
     <!-- Brand -->
-    <div class="pl-4 xl:flex-none">
+    <div class="pl-1 flex flex-row justify-bottom">
       <a href="#home">
-        <Image src={brand} alt="Brand Logo" class="w-[219px]" loading="eager" />
+        <Image src={brand} alt="Brand Logo" class="w-[130px]" loading="eager" />
       </a>
+      <!-- <h2 class="font-bold font-sans">rylab</h2> -->
     </div>
 
     <!-- Nav Menu -->
     <div
       id="navmenu"
-      class="bg-[#fff] w-full absolute top-full z-10 xl:static xl:flex xl:flex-grow xl:items-center xl:justify-center overflow-hidden transition-height duration-500 h-0 xl:h-auto"
+      class="bg-[#E7E6DD] w-full absolute top-full z-10 xl:static xl:flex xl:flex-grow xl:items-center xl:justify-center overflow-hidden transition-height duration-500 h-0 xl:h-auto"
     >
       <!-- Nav Links -->
       <ul class="xl:flex xl:flex-grow xl:justify-center xl:gap-10">

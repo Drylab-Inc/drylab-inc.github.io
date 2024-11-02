@@ -6,26 +6,31 @@ import Section from "./Section.astro";
 
 <Section id="home">
   <div
-    class="grid grid-cols-1 grid-template md:grid-cols-2 md:grid-rows-1 mt-[135px]"
+    class="grid grid-cols-1 grid-template md:grid-cols-2 md:grid-rows-1 mt-[135px] justify-center items-center"
   >
     <div class="flex flex-col w-full lg:w-[66.5%]">
-      <h1>Navigating the digital landscape for success</h1>
+      <h1 class="justify-bottom">Your Research Deserves Better Software</h1>
     </div>
-    <picture class="row-span-1 md:row-span-3">
-      <Image src={HeroIlust} alt="Hero Ilustration" loading="eager" />
+    <picture class="row-span-1 md:row-auto">
+      <Image src={HeroIlust} alt="Hero Illustration" loading="eager" width={50} height={50}/>
     </picture>
-    <div class="w-full lg:w-[66.5%]">
-      <p class="my-[35px]">
-        Our digital marketing agency helps businesses grow and succeed online
-        through a range of services including SEO, PPC, social media marketing,
-        and content creation.
+    
+    <div class="w-full lg:w-[66.5%] justify-bottom">
+      <p class="mb-[24px]">
+        We are on a quest to improve every scientific software niche to accelerate discovery.
       </p>
       <button class="btn-primary w-full md:w-auto">Book a consultation</button>
     </div>
   </div>
 </Section>
 <style>
-  .grid-template {
-    grid-template-rows: auto 1fr;
-  }
+/* Add fixed heights */
+.grid-template {
+  grid-template-rows: auto minmax(200px, 1fr) auto;  /* example */
+}
+
+/* Or force equal heights */
+.grid-template {
+  grid-auto-rows: 1fr;
+}
 </style>
