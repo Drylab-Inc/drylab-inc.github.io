@@ -26,12 +26,12 @@ const navLinks = [
 
 import bars from "../../assets/bars.svg";
 // import brand from "../../assets/brand.jpg";
-import brand from "../../assets/drylabFull.png";
+import brand from "../../assets/drylabD.svg";
 
 ---
 
 <div
-  class="bg-[#E7E6DD] fixed w-full top-0 z-10 py-[30px] h-auto flex justify-center"
+  class="bg-transparent fixed w-full top-0 z-10 py-[30px] h-auto flex justify-center"
 >
   <nav
     aria-label="Main Navigation"
@@ -50,15 +50,15 @@ import brand from "../../assets/drylabFull.png";
     <!-- Nav Menu -->
     <div
       id="navmenu"
-      class="bg-[#E7E6DD] w-full absolute top-full z-10 xl:static xl:flex xl:flex-grow xl:items-center xl:justify-center overflow-hidden transition-height duration-500 h-0 xl:h-auto"
+      class="bg-transparent w-full absolute top-full z-10 xl:static xl:flex xl:flex-grow xl:items-center xl:justify-center overflow-hidden transition-height duration-500 h-0 xl:h-auto"
     >
       <!-- Nav Links -->
-      <ul class="xl:flex xl:flex-grow xl:justify-center xl:gap-10">
+      <ul class="xl:flex xl:flex-grow xl:justify-center xl:gap-10 text-lg">
         {
           navLinks.map((link) => {
             return (
               <li class="mx-4 p-4 xl:mx-0 px-0">
-                <a id={link.name} href={link.href} class="block">
+                <a id={link.name} href={link.href} class="block hover:font-bold">
                   {link.name}
                 </a>
               </li>
@@ -69,7 +69,7 @@ import brand from "../../assets/drylabFull.png";
 
       <!-- Login -->
       <div class="flex xl:flex-row xl:items-center px-4 xl:gap-4 flex-col">
-        <button class="btn-secondary">Request a quote</button>
+        <button class="btn-primary">Request a quote</button>
       </div>
     </div>
 
