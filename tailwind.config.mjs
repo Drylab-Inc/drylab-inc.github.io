@@ -16,6 +16,9 @@ export default {
         dark: "var(--dark)",
         white: "var(--white)",
       },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
     },
   },
   plugins: [],

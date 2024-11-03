@@ -20,7 +20,7 @@
   }
 
   :root {
-    --green: #ff4242;
+    --green: #363636;
     --black: rgb(0, 0, 0);
     --dark: #191a23;
     --white: #f3f3f3;
@@ -91,10 +91,13 @@
 
   @layer components {
     .btn-primary {
-      @apply bg-dark text-white rounded-lg px-[35px] py-5 transition-all duration-200;
+      @apply border-2 border-red-500 bg-transparent text-red-500 rounded-3xl px-[35px] py-2;
+    }
+    .btn-mock {
+      @apply bg-[#000000] text-[#ffffff] rounded-xl px-[35px] py-2 transition-all duration-200;
     }
     .btn-primary:hover {
-      @apply bg-green text-black transform scale-105;
+      @apply border-2 text-red-700 border-red-700;
     }
 
     .btn-secondary {
