@@ -1,6 +1,13 @@
 ---
 import { Image } from "astro:assets";
 import Gene from "../../assets/pics/coolGene.svg";
+import Software from "../../assets/homeIcons/20.svg";
+import Microscope from "../../assets/homeIcons/21.svg";
+import Pipette from "../../assets/homeIcons/22.svg";
+import Files from "../../assets/homeIcons/23.svg";
+import Computer from "../../assets/homeIcons/24.svg";
+
+
 import Protein from "../../assets/pics/redProtein.svg";
 
 import Section from "./Section.astro";
@@ -8,26 +15,34 @@ import Section from "./Section.astro";
 
 <Section id="home" class="relative min-h-screen overflow-hidden">
   <!-- Background Half Circle -->
-  <div class="absolute w-full h-[50vw] bottom-0 left-1/2 -translate-x-1/2">
+  <!-- <div class="absolute w-full h-[50vw] bottom-0 left-1/2 -translate-x-1/2">
     <div class="w-full h-full rounded-t-full bg-[#F3EEE8]"></div>
     <div class="bg-[#dddddd] w-full h-[60px]"></div>
-  </div>
+  </div> -->
 
-  <div class="relative flex flex-row pt-72 min-h-screen justify-center">
-    <div class="flex flex-col items-start justify-center">
-      <div class="flex flex-col w-full items-center text-center">
-        <h1 class="text-9xl font-serif inline-block">Your Research <br/> Deserves Better <br/>Software <span class="animate-[spin_5s_linear_infinite] text-6xl text-red-500 font-serif inline-block">✱</span></h1>
-        <p class="text-2xl font-sans py-4">
-          We are on a quest to improve every scientific software niche to accelerate discovery.
+  <div class="flex flex-row min-h-screen justify-center relative">
+    <div class="flex flex-col justify-center items-center w-1/4">
+      <Image src={Pipette} alt="browser" height={220} class="pb-32 pl-6"></Image>
+      <Image src={Files} alt="browser" height={300}></Image>
+    </div>
+  
+    <div class="flex flex-col justify-center w-2/5">
+      <div class="flex flex-col w-full items-center text-center space-y-10">
+        <h1 class="text-8xl font-serif inline-block">Your Research <br/> Deserves Better <br/>Software <span class="animate-[spin_5s_linear_infinite] text-6xl text-red-500 font-serif inline-block">✱</span></h1>
+        <p class="text-3xl font-sans">
+          We are on a quest to improve every scientific <br/>software niche to accelerate discovery.
         </p>
         <button class="btn-primary w-full md:w-auto font-sans">Make a software request</button>
       </div>
     </div>
-
-    <div class="flex flex-col justify-top items-baseline">
-      <Image src={Gene} alt="browser" height={350}></Image>
+  
+    <div class="flex flex-col justify-center items-center w-1/4">
+      <Image src={Computer} alt="browser" height={580}></Image>
     </div>
   </div>
+
+
+
 </Section>
 
 
