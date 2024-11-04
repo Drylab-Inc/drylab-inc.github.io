@@ -14,33 +14,42 @@ import wob from "../../assets/icon7.svg";
 const { index, titleTop, titleBottom, img, alt, link } = Astro.props;
 ---
 
-<Card isUnderline={true}>
-  <div
-    class=`h-[300px] w-full sm:h-full lg:gap-[60px] grid custom-grid lg:grid-cols-2 lg:grid-rows-1 p-8 sm:p-[50px] rounded-[45px] ${index === 1 ? 'bg-white' : index === 2 ? 'bg-green' : 'bg-dark text-white'}`
+<Card >
+  <div 
+    class={`h-[500px] w-[400px] p-8 rounded-[45px]  ${
+      index === 1 ? 'bg-[#DEF3D9]' : index === 2 ? 'bg-[#f9e0f2]' : 'bg-dark text-white'
+    }`}
   >
-    <h3 class=`flex flex-col col-span-2 lg:col-span-1`>
-      <span class=`w-[fit-content] ${index === 1 ? 'greenhead' : 'whitehead'}`
-        >{titleTop}</span
-      >
-      <span class=`w-[fit-content] ${index === 1 ? 'greenhead' : 'whitehead'}`
-        >{titleBottom}</span
-      >
+    <h3 class="flex flex-col h-1/3 col-span-2 lg:col-span-1">
+      <span class="w-[fit-content] font-serif text-4xl">
+        {titleTop}
+      </span>
+      <span class="w-[fit-content] font-sans">
+        {titleBottom}
+      </span>
     </h3>
-    <picture
-      class="w-full h-full row-span-1 order-1 lg:order-none lg:row-span-2 flex justify-center items-center"
-    >
+
+    <div class="">
+
+    </div>
+
+    <div class="h-1/3 flex justify-center items-start">
       <Image
         src={img}
         alt={alt}
-        class="h-[100px] w-auto sm:h-auto sm:w-3/4 object-cover"
+        height={200}
       />
-    </picture>
-    <div class="flex items-end">
-      <a href={link} class="flex items-center gap-3.5"
-        ><Image src={index === 1 || index === 2 ? gob : wob} alt={alt} />
-        <span class="hidden sm:block">Service Info</span></a
-      >
     </div>
+
+    <div class="flex items-end h-1/3">
+      <a href={link} class="flex items-center">
+        <!-- <button class="btn-primary hidden sm:block">Service Info</button> -->
+         <div>
+          <span class="text-red-500 font-bold hover:text-red-700 text-2xl">✻ In the works</span>
+         </div>
+      </a>
+    </div>
+
   </div>
 </Card>
 

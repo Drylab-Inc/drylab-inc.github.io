@@ -10,77 +10,83 @@ import c4 from "../../assets/pics/card-pic4.png";
 import c5 from "../../assets/pics/card-pic5.png";
 import c6 from "../../assets/pics/card-pic6.png";
 
+import Microscope from "../../assets/homeIcons/21.svg";
+import Pipette from "../../assets/homeIcons/22.svg";
+import DNA from "../../assets/homeIcons/27.svg";
+
+
 const cards = [
   {
     index: 1,
-    titleTop: "Search Engine",
-    titleBottom: "Optimization",
-    img: c1,
+    titleTop: "Adenine",
+    titleBottom: "The most complete genome utiliies & browser",
+    img: DNA,
     alt: "SEO",
-    link: "https://google.com",
+    link: "adenine",
   },
   {
     index: 2,
-    titleTop: "Pay-per-click",
-    titleBottom: "advertising",
-    img: c2,
+    titleTop: "Guanine",
+    titleBottom: "Next level, user friendly image processing fir biology",
+    img: Microscope,
     alt: "SEO",
-    link: "https://google.com",
-  },
-  {
-    index: 3,
-    titleTop: "Social Media",
-    titleBottom: "Marketing",
-    img: c3,
-    alt: "SEO",
-    link: "https://google.com",
-  },
-  {
-    index: 1,
-    titleTop: "Email",
-    titleBottom: "Marketing",
-    img: c4,
-    alt: "SEO",
-    link: "https://google.com",
-  },
-  {
-    index: 2,
-    titleTop: "Content",
-    titleBottom: "Creation",
-    img: c5,
-    alt: "SEO",
-    link: "https://google.com",
-  },
-  {
-    index: 3,
-    titleTop: "Analytics and",
-    titleBottom: "Tracking",
-    img: c6,
-    alt: "SEO",
-    link: "https://google.com",
-  },
+    link: "guanine",
+  }
 ];
 
 const description =
-  "At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include";
+  "";
 ---
 
-<Section>
-  <div class="mt-[140px] mb-5">
-    <SectionTitle sectionTitle="Services" description={description} />
-    <div class="grid lg:grid-cols-2 lg:grid-rows-3 gap-10">
-      {
-        cards.map((card) => (
-          <ServiceCard
-            index={card.index}
-            titleTop={card.titleTop}
-            titleBottom={card.titleBottom}
-            img={card.img}
-            alt={card.alt}
-            link={card.link}
-          />
-        ))
-      }
+<Section id="products">
+
+
+
+  <div class=" bg-[#FFFFFF] flex flex-col items-center pb-20 ">
+
+    <div class="flex justify-center items-center p-[60px] w-full overflow-hidden">
+      <!-- <h1 class="font-serif font-bold">Contact Us</h1> -->
+      <SectionTitle
+      sectionTitle="Products"
+      description=""
+    />
+      
+    </div>  
+
+    <div class="items-start justify-start flex flex-row space-x-10 ">
+      <div class="grid lg:grid-cols-2 lg:grid-rows-1 gap-10">
+        {
+          cards.map((card) => (
+            <ServiceCard
+              index={card.index}
+              titleTop={card.titleTop}
+              titleBottom={card.titleBottom}
+              img={card.img}
+              alt={card.alt}
+              link={card.link}
+            />
+          ))
+        }
+      </div>
+      <div>
+
+      <div class="h-[500px] w-[400px] p-8 rounded-[45px] bg-gray-50 text-black border-dashed border-4 border-gray-300">
+        <h3 class="flex flex-col col-span-2 lg:col-span-1 text-center pt-48 pb-4">
+          <span class="w-full font-serif text-4xl">
+            More soon ◡̈
+          </span>
+          
+
+        </h3>
+        <button class="btn-primary w-full md:w-auto h-[55px] cursor-pointer">Tell us what to make next! </button>
+
+      </div>
+
+      </div>
     </div>
+
+    
+
   </div>
+
 </Section>

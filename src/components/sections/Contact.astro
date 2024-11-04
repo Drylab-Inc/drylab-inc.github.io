@@ -1,15 +1,38 @@
 ---
-import Form from "../ui/Form.astro";
-import SectionTitle from "../ui/SectionTitle.astro";
 import Section from "./Section.astro";
+import Software from "../../assets/homeIcons/20.svg";
+import Mail from "../../assets/homeIcons/25.svg";
+import Email from "../../assets/homeIcons/26.svg";
+import { Image } from "astro:assets";
+import SectionTitle from "../ui/SectionTitle.astro";
+
 ---
 
-<Section id="contact">
-  <div class="mb-[140px] relative">
+<Section id="contact" >
+  <div class=" bg-[#f9e0f2] flex flex-col items-center justify-center pt-16">
     <SectionTitle
-      sectionTitle="Contact Us"
-      description="Connect with Us: Let's Discuss Your Digital Marketing Needs"
-    />
-    <Form />
+    sectionTitle="Contact Us"
+    description=""
+  />
+
+  <div class="flex flex-row justify-center pb-6">
+    <div class="flex flex-col relative justify-center items-center p-[60px] w-2/4 overflow-hidden space-y-10">
+      <!-- <h1 class="font-serif font-bold">Contact Us</h1> -->
+
+      <p class="text-2xl font-sans">Want a process in your workflow automated? Some ancient scientific software improved? <span class="font-bold"> Get in touch.</span> </p>
+
+      
+  
+      <button type="submit" name="submit" class="btn-primary w-full" onclick="location.href='mailto:effie@effie.bio?subject=Subject line is here'">Make a software request</button>
+      <button type="submit" name="submit" class="btn-primary w-full">Other inquiries</button>
+
+      <picture class="absolute right-[-25%] top-[2%] bottom-[2%] hidden lg:block">
+        <!-- <Image src={decorForm} alt="decor" /> -->
+      </picture>
+    </div>  
+
+    <Image src={Mail} alt="browser" height={220} class="pb-32 pl-6"></Image>
+  </div>
+
   </div>
 </Section>

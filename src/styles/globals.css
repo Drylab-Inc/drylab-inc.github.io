@@ -91,13 +91,13 @@
 
   @layer components {
     .btn-primary {
-      @apply border-2 border-red-500 bg-transparent text-red-500 rounded-3xl px-[35px] py-2;
+      @apply font-semibold border-red-500 bg-red-500 text-white rounded-3xl px-[35px] py-2 transition-all duration-200;
     }
     .btn-mock {
       @apply bg-[#000000] text-[#ffffff] rounded-xl px-[35px] py-2 transition-all duration-200;
     }
     .btn-primary:hover {
-      @apply border-2 text-red-700 border-red-700;
+      @apply font-semibold border-red-700 bg-red-700 text-white rounded-3xl px-[35px] py-2;
     }
 
     .btn-secondary {
