@@ -16,7 +16,7 @@ const navLinks = [
 
 import bars from "../../assets/bars.svg";
 // import brand from "../../assets/brand.jpg";
-import brand from "../../assets/dryFull.png";
+import brand from "../../assets/dryLogo.svg";
 
 ---
 
@@ -30,9 +30,8 @@ import brand from "../../assets/dryFull.png";
   >
     <!-- Brand -->
     <div class="flex flex-row justify-bottom pr-1">
-      <span class="text-xl text-red-500 font-serif pt-2 pr-4"></span>
-      <a href="#home">
-        <Image src={brand} alt="Brand Logo" height={50} loading="eager" />
+      <a href="#home" class="font-serif text-3xl">
+         drylab
       </a>
       <!-- <h2 class="text-xl font-sans">rylab</h2> -->
     </div>
@@ -55,80 +54,11 @@ import brand from "../../assets/dryFull.png";
             );
           })
         }
-      </ul>
+      </ul>      
 
-      <!-- Login -->
-      
-
-      <div class="flex flex-row justify-bottom pl-1">
-        <button class="btn-primary" onclick="location.href='#contact'">Contact Us</button>
-        <span class="text-xl text-red-500 font-serif pt-2 px-4"></span>
-
-        <!-- <h2 class="text-xl font-sans">rylab</h2> -->
-      </div>
+      <button class="btn-primary" onclick="location.href='#contact'">Contact Us</button>
 
     </div>
 
   </nav>
 </div>
-<script>
-  document.addEventListener("DOMContentLoaded", (_) => {
-    const menuButton = document.getElementById("menuButton");
-    const navMenu = document.getElementById("navmenu");
-
-    let isMenuOpen = false;
-
-    if (menuButton && navMenu) {
-      menuButton.addEventListener("click", () => {
-        /* Handle the height transition */
-        isMenuOpen = !isMenuOpen;
-
-        menuButton.setAttribute("aria-expanded", `${isMenuOpen}`);
-
-        if (isMenuOpen) {
-          navMenu.style.height = `${navMenu.scrollHeight}px`;
-        } else {
-          navMenu.style.height = "0px";
-        }
-      });
-
-      navMenu.addEventListener("click", () => {
-        /* Close menu after using it */
-        if (isMenuOpen) {
-          isMenuOpen = false;
-          navMenu.style.height = "0px";
-          navMenu.classList.remove("h-auto");
-        }
-      });
-
-      window.addEventListener("resize", () => {
-        /* Resize cleanup screen state*/
-        if (window.innerWidth >= 1280) {
-          /* Add height if menu was closed and then resize happened */
-          navMenu.style.height = "auto";
-          navMenu.classList.remove("h-0");
-        } else {
-          /* Prevent opened menu when going from bit to small */
-          navMenu.style.height = "0px";
-        }
-      });
-    }
-  });
-</script>
-
-<!-- 
-  Use to highlight the active link in the navigation bar
-  Gotta test in dev and prod bc sometimes it doesn't work
----
-const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname.slice(1); // remove the first "/"
----
-
-<nav>
-  <a class={currentPath === "" ? "active" : ""} href="/">Home</a>
-  <a class={currentPath === "portfolio" ? "active" : ""} href="/portfolio">Portfolio</a>
-  <a class={currentPath === "posts" ? "active" : ""} href="/posts">Article</a>
-  <a class={currentPath === "about" ? "active" : ""} href="/about">About Me</a>
-  <a class={currentPath === "contact" ? "active" : ""} href="/contact">Contact Me</a>
-</nav>
--->
