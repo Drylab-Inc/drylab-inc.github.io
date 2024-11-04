@@ -2,16 +2,15 @@
 import { Image } from "astro:assets";
 
 const navLinks = [
-
 {
-    name: "Missionr",
-    href: "/mission",
+    name: "Home",
+    href: "#home",
   },{
     name: "Products",
-    href: "/products",
+    href: "#products",
   },{
-    name: "The developer",
-    href: "https://effie.bio",
+    name: "Contact Us",
+    href: "#contact",
   }
 ];
 
@@ -33,7 +32,7 @@ import brand from "../../assets/dryFull.png";
     <div class="flex flex-row justify-bottom pr-1">
       <span class="text-xl text-red-500 font-serif pt-2 pr-4">●</span>
       <a href="#home">
-        <Image src={brand} alt="Brand Logo" class="w-[150px]" loading="eager" />
+        <Image src={brand} alt="Brand Logo" height={50} loading="eager" />
       </a>
       <!-- <h2 class="text-xl font-sans">rylab</h2> -->
     </div>
@@ -41,7 +40,7 @@ import brand from "../../assets/dryFull.png";
     <!-- Nav Menu -->
     <div
       id="navmenu"
-      class="bg-transparent w-full absolute top-full z-10 xl:static xl:flex xl:flex-grow xl:items-center xl:justify-center overflow-hidden transition-height duration-500 h-0 xl:h-auto"
+      class="bg-transparent w-full absolute top-full z-10 pl-10 xl:static xl:flex xl:flex-grow xl:items-center xl:justify-center overflow-hidden transition-height duration-500 h-0 xl:h-auto"
     >
       <!-- Nav Links -->
       <ul class="xl:flex xl:flex-grow xl:justify-center xl:gap-10 text-lg">
@@ -59,28 +58,16 @@ import brand from "../../assets/dryFull.png";
       </ul>
 
       <!-- Login -->
-      <button class="btn-primary">Contact Us</button>
-<!-- 
-      <div class="flex xl:flex-row xl:items-center p-2 xl:gap-4 flex-col relative">
-        <div class="relative">
-          <button class="btn-mock relative">Contact Us</button>
-          <button class="btn-primary absolute top-[-4px] left-[-4px]">Contact Us</button>
-              </div>
-      </div> -->
-    </div>
+      
 
-    <!-- Hamburger menu -->
-    <button
-      aria-label="menu"
-      role="button"
-      aria-controls="navmenu"
-      aria-expanded="false"
-      id="menuButton"
-      class="w-12 h-12 xl:hidden pr-4 cursor-pointer"
-    >
-      <Image src={bars} alt="hamburgerIcon" class="hamburgerIcon" />
-    </button>
-    <span class="text-xl text-red-500 font-serif pt-2 pl-4">●</span>
+      <div class="flex flex-row justify-bottom pl-1">
+        <button class="btn-primary" onclick="location.href='#contact'">Contact Us</button>
+        <span class="text-xl text-red-500 font-serif pt-2 px-4">●</span>
+
+        <!-- <h2 class="text-xl font-sans">rylab</h2> -->
+      </div>
+
+    </div>
 
   </nav>
 </div>

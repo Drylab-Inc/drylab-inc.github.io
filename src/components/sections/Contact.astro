@@ -19,16 +19,18 @@ import SectionTitle from "../ui/SectionTitle.astro";
     <div class="flex flex-col relative justify-center items-center p-[60px] w-2/4 overflow-hidden space-y-10">
       <!-- <h1 class="font-serif font-bold">Contact Us</h1> -->
 
-      <p class="text-2xl font-sans">Want a process in your workflow automated? Some ancient scientific software improved? <span class="font-bold"> Get in touch.</span> </p>
+      <p class="text-2xl">Need a workflow automated or legacy scientific software modernized?<span class="font-bold"> Get in touch and let us help:</span> </p>
 
-      
-  
-      <button type="submit" name="submit" class="btn-primary w-full" onclick="location.href='mailto:effie@effie.bio?subject=Subject line is here'">Make a software request</button>
-      <button type="submit" name="submit" class="btn-primary w-full">Other inquiries</button>
+      <div class="space-y-4">
+        <button type="submit" name="submit" class="btn-primary w-full" onclick="location.href='mailto:hi@effie.bio?subject=Request for Workflow Automation - Drylab&body=Hi,%0D%0A%0D%0AI would like to request automation assistance for a process in my scientific workflow. Could you please tell me more about how Drylab could help streamline and automate this task? %0D%0A%0D%0ABest,%0D%0A'">Make a Workflow Automation Request</button>
+        <button type="submit" name="submit" class="btn-primary w-full" onclick="location.href='mailto:hi@effie.bio?subject=Software request - Drylab&body=Hi,%0D%0A%0D%0AI am currently using [Software Name] for my scientific workflows, but I am finding it to be outdated and lacking key features.%0D%0A%0D%0ACould you please provide me with more information on how Drylab could help modernize [Software Name]?%0D%0A%0D%0ABest,%0D%0A%0D%0A'">Make a Request for Software</button>
+        <button type="submit" name="submit" class="btn-primary w-full" onclick="location.href='mailto:hi@effie.bio?subject=Inquiry About Drylab&body=Hi,%0D%0A%0D%0AI would like to learn more about how Drylab could assist with improving the scientific software and tools used in my work.%0D%0A%0D%0ABest,%0D%0A%0D%0A'">Other inquiries</button>
+      </div>
 
-      <picture class="absolute right-[-25%] top-[2%] bottom-[2%] hidden lg:block">
-        <!-- <Image src={decorForm} alt="decor" /> -->
-      </picture>
+      <div>
+        <p class="text-2xl">Or email us directly at <span class="underline text-red-500">hi@effie.bio</span>. </p>
+      </div>
+
     </div>  
 
     <Image src={Mail} alt="browser" height={220} class="pb-32 pl-6"></Image>

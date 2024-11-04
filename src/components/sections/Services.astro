@@ -18,19 +18,21 @@ import DNA from "../../assets/homeIcons/27.svg";
 const cards = [
   {
     index: 1,
-    titleTop: "Adenine",
-    titleBottom: "The most complete genome utiliies & browser",
+    titleTop: "Vasco",
+    titleBottom: "The most complete genome utility tool & browser",
     img: DNA,
     alt: "SEO",
-    link: "adenine",
+    link: "vasco",
+    progress: "40"
   },
   {
     index: 2,
-    titleTop: "Guanine",
-    titleBottom: "Next level, user friendly image processing fir biology",
+    titleTop: "Niove",
+    titleBottom: "Next level, user-friendly image processing",
     img: Microscope,
     alt: "SEO",
-    link: "guanine",
+    link: "niove",
+    progress: "10"
   }
 ];
 
@@ -45,7 +47,6 @@ const description =
   <div class=" bg-[#FFFFFF] flex flex-col items-center pb-20 ">
 
     <div class="flex justify-center items-center p-[60px] w-full overflow-hidden">
-      <!-- <h1 class="font-serif font-bold">Contact Us</h1> -->
       <SectionTitle
       sectionTitle="Products"
       description=""
@@ -64,6 +65,7 @@ const description =
               img={card.img}
               alt={card.alt}
               link={card.link}
+              progress={card.progress}
             />
           ))
         }
@@ -78,7 +80,7 @@ const description =
           
 
         </h3>
-        <button class="btn-primary w-full md:w-auto h-[55px] cursor-pointer">Tell us what to make next! </button>
+        <button class="btn-primary w-full md:w-auto h-[55px] cursor-pointer" onclick="location.href='#contact'">Tell us what to make next! </button>
 
       </div>
 
