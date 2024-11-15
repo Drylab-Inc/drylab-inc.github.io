@@ -1,11 +1,14 @@
 ---
 import Seo from "../components/seo/Seo.astro";
+import {AstroFont} from "astro-font"
 
 // Pass the contents to create SEO for the page
 const { title, description, image, frontmatter, robots } = Astro.props;
 ---
 
 <head>
+
+
   <meta charset="utf-8" />
   <link rel="icon" type="image/svg+xml" href="/dryCircle.png" />
 
@@ -14,6 +17,31 @@ const { title, description, image, frontmatter, robots } = Astro.props;
   -->
   <meta name="viewport" content="width=device-width" />
   <meta name="generator" content={Astro.generator} />
+
+  <AstroFont
+  config={[
+    {
+      src: [],
+      name: "Epilogue",
+      // Google Fonts URL
+      googleFontsURL: 'https://fonts.googleapis.com/css2?family=Epilogue:wght@600&display=swap',
+      preload: true,
+      display: "swap",
+      selector: "body",
+      fallback: "sans-serif",
+    },{
+      src: [],
+      name: "Outfit",
+      // Google Fonts URL
+      googleFontsURL: 'https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@1,600&family=Outfit:wght@100..900&display=swap',
+      preload: true,
+      display: "swap",
+      selector: "body",
+      fallback: "sans-serif",
+    },
+
+  ]}
+/>
 
   <title>{title}</title>
   <meta name="description" content={description} />

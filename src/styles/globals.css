@@ -3,21 +3,14 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: "Grotesk";
-    src: url("/fonts/grotesk/SpaceGrotesk-Regular.woff"), format("woff");
-    font-weight: normal;
+  /* @font-face {
+    font-family: "Epilogue";
+    src: url("/fonts/epilogue/Epilogue-VariableFont_wght.tff")
+      format("truetype");
+    font-optical-sizing: auto;
+    font-weight: 200;
     font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Grotesk";
-    src: url("/fonts/grotesk/SpaceGrotesk-Medium.woff"), format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-  }
+  } */
 
   :root {
     --green: #363636;
@@ -38,7 +31,7 @@
   @layer base {
     * {
       box-sizing: border-box;
-      font-family: "Grotesk", sans-serif;
+      /* font-family: "Epilogue", sans-serif; */
       scroll-behavior: smooth;
     }
 
@@ -100,13 +93,13 @@
 
   @layer components {
     .btn-primary {
-      @apply font-semibold border-red-500 bg-red-500 text-white rounded-3xl px-[35px] py-2 transition-all duration-200;
+      @apply font-semibold border-rose-700 bg-rose-700 text-white rounded-xl px-[35px] py-2 transition-all duration-200;
     }
     .btn-mock {
       @apply bg-[#000000] text-[#ffffff] rounded-xl px-[35px] py-2 transition-all duration-200;
     }
     .btn-primary:hover {
-      @apply font-semibold border-red-700 bg-red-700 text-white rounded-3xl px-[35px] py-2;
+      @apply font-semibold border-rose-600 bg-rose-600 text-white rounded-xl px-[35px] py-2;
     }
 
     .btn-secondary {

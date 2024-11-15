@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        grotesk: ["Grotesk", "sans-serif"],
+        // grotesk: ["Grotesk", "sans-serif"],
+        // epilogue: ["Epilogue", "sans-serif"],
+        sans: ["Outfit", "sans-serif"],
       },
       fontWeight: {
         regular: 400,
