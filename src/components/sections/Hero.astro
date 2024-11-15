@@ -28,7 +28,14 @@ import Section from "./Section.astro";
    -->
     <div class="flex flex-col justify-center item-center ">
       <div class="flex flex-col w-full items-center text-center space-y-10 select-none">
-        <h1 class="sm:text-8xl sm:w-2/4 w-3/4 text-5xl font-serif inline-block">Your Research <span class=" font-serif italic">Deserves</span> <span class="underline decoration-red-500 font-serif">Better Software</span> <span onclick="window.location='https://effie.bio'"class="animate-[spin_5s_linear_infinite] text-6xl text-red-500 font-serif hover:cursor-pointer hover:text-red-700 inline-block sm:inline-block hidden">✻</span></h1>
+        <h1 class="leading-100 sm:text-8xl sm:w-3/4 w-4/4 text-6xl font-serif inline-block">Your Research <br/> <span class=" font-serif italic">Deserves</span> <br/> <span class="underline decoration-red-500 font-serif">Better Software</span> 
+          
+          <!-- <div class="tooltip-wrapper" data-tooltip="The developer">
+            <span onclick="window.location='https://effie.bio'"class="rotating-symbol text-xs">✻</span>
+          </div> -->
+
+         
+        </h1>
         <p class="sm:text-3xl text-xl sm:w-2/4 w-3/4">
          Our vision is to accelerate science by improving every scientific software niche.
         </p>
@@ -46,3 +53,85 @@ import Section from "./Section.astro";
 </Section>
 
 
+
+<style>
+  .custom-grid {
+    grid-template: auto auto;
+  }
+
+  .tooltip-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+
+    .rotating-symbol {
+      animation: spin 5s linear infinite;
+      font-size: 4rem;
+      color: rgb(239, 68, 68);
+      font-family: serif;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .rotating-symbol:hover {
+      color: rgb(185, 28, 28);
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .tooltip-wrapper[data-tooltip]:hover::after {
+    display: block;
+    position: absolute;
+    font-size: 17px;
+    content: attr(data-tooltip);
+    border: 1px solid hsl(0, 0%, 100%);
+    background: hsl(0, 0%, 100%);
+    padding: 0.25em;
+    border-radius: 0.5rem;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-20%) translateY(-340%);
+    white-space: nowrap;
+    margin-top: 4px;
+    animation: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+               0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    z-index: 1;
+}
+
+.tooltip-wrapper[data-tooltip]:hover::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-27%) translateY(-590%);
+    margin-top: 12px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.1));
+    z-index: 2; /* Place triangle above the tooltip content */
+}
+
+.progress-container {
+            width: 300px;
+            height: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px;
+        }
+        .progress-bar {
+            width: 50%;
+            height: 100%;
+            background-color: rgb(239, 68, 68);
+            transition: width 0.3s ease;
+        }
+</style>

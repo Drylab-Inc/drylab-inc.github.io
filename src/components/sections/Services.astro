@@ -10,20 +10,22 @@ const cards = [
   {
     index: 1,
     titleTop: "Vasco",
+    subtitle: "beta",
     titleBottom: "The most complete genome utility tool & browser",
     img: DNA,
     alt: "SEO",
-    link: "vasco",
-    progress: "40"
+    link: "https://vasco-drylab.vercel.app",
+    progress: "90"
   },
   {
     index: 2,
     titleTop: "Niove",
+    subtitle: "Coming soon",
     titleBottom: "Next level, user-friendly image processing",
     img: Microscope,
     alt: "SEO",
-    link: "niove",
-    progress: "10"
+    link: "#products",
+    progress: "20"
   }
 ];
 
@@ -52,6 +54,7 @@ const description =
             <ServiceCard
               index={card.index}
               titleTop={card.titleTop}
+              subtitle={card.subtitle}
               titleBottom={card.titleBottom}
               img={card.img}
               alt={card.alt}
