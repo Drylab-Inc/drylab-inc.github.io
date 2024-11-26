@@ -19,7 +19,7 @@ export default function NavBar() {
         } z-30 transition-all`}
       >
         <div className="mx-5 flex h-16 w-full max-w-screen-xl items-center justify-between">
-          <Link href="/" className="flex items-center font-display text-2xl">
+          <Link href="/" className="flex items-center font-display text-3xl">
             <p>drylab</p>
           </Link>
 
