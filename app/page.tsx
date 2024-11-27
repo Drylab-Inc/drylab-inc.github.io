@@ -35,8 +35,9 @@ export default async function Home() {
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
-          Our vision is to increase the rate of discovery by improving <br />{" "}
-          every scientific software niche.
+          We engineer intelligent software platforms that amplify the pace of
+          scientific research by making sophisticated tools intuitive and
+          user-friendly.
         </p>
         <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
@@ -116,8 +117,8 @@ export default async function Home() {
         className="mt-6 max-w-xl animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
         style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
       >
-        Need a software interface for your workflow, or legacy scientific
-        software modernized?
+        Want to enhance a specific research tool or reimagine your scientific
+        software landscape? Let us Know.
       </p>
       <div
         className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 pb-32 opacity-0"
@@ -155,7 +156,7 @@ const features = [
 const apps = [
   {
     title: "[Vasco](https://vasco.drylab.bio)",
-    description: "The most complete genome utilities & browser",
+    description: "Redefining genomic browsing with unparalleled utility",
     demo: (
       <Link href="https://vasco.drylab.bio)">
         <Image alt="" src={Browser} height={200} className="pt-4" />
