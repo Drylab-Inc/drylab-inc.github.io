@@ -166,7 +166,7 @@ const apps = [
   {
     title: "Coming soon: Niove",
     description:
-      "Powerful, user-friendly image processing software with a gentle learning curve",
+      "Complex image processing, rendered elegantly simple. ImageJ reimagined: more powerful, dramatically easier.",
     demo: <Image alt="" src={Niove} height={400} />,
   },
   {
