@@ -141,7 +141,7 @@ const features = [
   {
     title: "Beautiful, functional software",
     description:
-      "Breaking free from legacy scientific software — intuitive interfaces, beautiful design.",
+      "Breaking free from legacy scientific software. Intuitive interfaces, beautiful design.",
     large: true,
     demo: <Image alt="" src={Cells} height={400} />,
   },
@@ -165,7 +165,7 @@ const apps = [
   {
     title: "Coming soon: Niove",
     description:
-      "Complex image processing, rendered elegantly simple. ImageJ reimagined: more powerful, dramatically easier.",
+      "Complex image processing, rendered elegantly simple. ImageJ reimagined.",
     demo: <Image alt="" src={Niove} height={400} />,
   },
   {
