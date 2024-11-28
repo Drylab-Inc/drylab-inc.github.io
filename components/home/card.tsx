@@ -81,14 +81,14 @@ export function Card({
           <h2 className="bg-gradient-to-br from-foreground to-foreground/50 bg-clip-text font-display text-2xl font-bold text-transparent [text-wrap:balance] hover:underline md:text-4xl">
             <ReactMarkdown>{title}</ReactMarkdown>
           </h2>
-          <div className="prose-lg mt-4 leading-normal text-gray-600 [text-wrap:balance]">
+          <div className="prose-lg mt-4 leading-normal text-foreground/60 [text-wrap:balance]">
             <ReactMarkdown
               components={{
                 a: ({ node, ...props }) => (
                   <a
                     target="_blank"
                     {...props}
-                    className="font-medium text-gray-800 underline transition-colors"
+                    className="font-medium text-foreground underline transition-colors"
                   />
                 ),
                 code: ({ node, ...props }) => (
