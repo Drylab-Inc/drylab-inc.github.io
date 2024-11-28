@@ -32,7 +32,7 @@ export default async function Home() {
           Your research deserves better software
         </h1>
         <p
-          className="mt-6 animate-fade-up text-center text-foreground/40 opacity-0 [text-wrap:balance] md:text-xl"
+          className="mt-6 animate-fade-up text-center text-foreground/60 opacity-0 [text-wrap:balance] md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
           We engineer intelligent software platforms that amplify the pace of
