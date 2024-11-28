@@ -5,6 +5,7 @@ import Link from "next/link";
 import useScroll from "@/lib/hooks/use-scroll";
 // import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import { LayoutDashboard } from "lucide-react";
+import { ModeToggle } from "@/components/ui/theme-button";
 
 export default function NavBar() {
   const scrolled = useScroll(50);
@@ -32,6 +33,7 @@ export default function NavBar() {
             <p>Contact Us</p>
           </a>
 
+          <ModeToggle />
           {/* <SignedOut>
             <SignInButton mode="modal">
               <button className="rounded-full border border-black bg-black px-4 py-1.5 text-sm text-white transition-colors hover:bg-white hover:text-black">
