@@ -6,7 +6,7 @@ import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import Link from "next/link";
 import { nFormatter } from "@/lib/utils";
-import Cells from "@/public/cells.png";
+import Cells from "@/public/commandK.png";
 import Browser from "@/public/browser.png";
 import Niove from "@/public/niove.png";
 
