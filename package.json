@@ -28,6 +28,7 @@
     "eslint-config-next": "13.1.1",
     "focus-trap-react": "^10.2.2",
     "framer-motion": "^8.5.5",
+    "gray-matter": "^4.0.3",
     "lucide-react": "0.105.0-alpha.4",
     "mini-css-extract-plugin": "^2.9.2",
     "ms": "^2.1.3",
