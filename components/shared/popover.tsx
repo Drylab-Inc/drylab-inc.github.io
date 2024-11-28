@@ -29,7 +29,7 @@ export default function Popover({
         <Drawer.Portal>
           <Drawer.Content className="fixed bottom-0 left-0 right-0 z-50 mt-24 rounded-t-[10px] border-t border-gray-200 bg-background">
             <div className="sticky top-0 z-20 flex w-full items-center justify-center rounded-t-[10px] bg-inherit">
-              <div className="my-3 h-1 w-12 rounded-full bg-gray-300" />
+              <div className="my-3 h-1 w-12 rounded-full bg-secondary" />
             </div>
             <div className="flex min-h-[150px] w-full items-center justify-center overflow-hidden bg-background pb-8 align-middle shadow-xl">
               {content}
