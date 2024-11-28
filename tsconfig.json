@@ -11,6 +11,7 @@
       "@/app/*": ["app/*"],
       "@/lib/*": ["lib/*"],
       "@/styles/*": ["styles/*"],
+      "@/public/*": ["public/*"],
       "@/*": ["./src/*"]
     },
     "strict": true,
