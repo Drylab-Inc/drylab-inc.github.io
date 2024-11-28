@@ -71,7 +71,7 @@ export function Card({
       }`}
     >
       {/* Background demo element */}
-      <div className="absolute inset-0 z-10 flex items-start justify-center">
+      <div className="absolute inset-0 z-10 flex items-start justify-center md:pb-6">
         {demo}
       </div>
 
