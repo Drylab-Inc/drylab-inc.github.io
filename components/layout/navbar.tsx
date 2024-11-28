@@ -27,7 +27,7 @@ export default function NavBar() {
           <div className="flex flex-row space-x-2">
             <a
               className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-foreground bg-foreground px-5 py-2 text-sm text-background transition-colors hover:bg-background hover:text-foreground"
-              href="#contact"
+              href="mailto:hi@effie.bio"
               target="_blank"
               rel="noopener noreferrer"
             >
