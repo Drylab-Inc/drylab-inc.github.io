@@ -148,7 +148,7 @@ const features = [
   {
     title: "Performance first",
     description:
-      "The days of slow, legacy scientific software are finally over.",
+      "Science moves fast. Your software should too. The days of slow, legacy scientific software are finally over.",
     demo: <WebVitals />,
   },
 ];
