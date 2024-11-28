@@ -141,14 +141,13 @@ const features = [
   {
     title: "Beautiful, functional software",
     description:
-      "Keyboard shortcuts and beautiful design for incredible user experience.",
+      "Breaking free from legacy scientific software — intuitive interfaces, beautiful design.",
     large: true,
     demo: <Image alt="" src={Cells} height={400} />,
   },
   {
     title: "Performance first",
-    description:
-      "Science moves fast. Your software should too. The days of slow, legacy scientific software are finally over.",
+    description: "Science moves fast. Your software should too.",
     demo: <WebVitals />,
   },
 ];
