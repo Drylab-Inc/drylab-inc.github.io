@@ -18,7 +18,7 @@ export function CardSecond({
         large ? "md:col-span-2" : ""
       }`}
     >
-      <div className="flex h-60 items-start justify-start">{demo}</div>
+      <div className="flex h-60 items-start justify-start pb-10">{demo}</div>
       <div className="mx-auto max-w-lg text-center">
         <h1 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal">
           <ReactMarkdown>{title}</ReactMarkdown>
