@@ -21,12 +21,12 @@ export default function NavBar() {
       >
         <div className="mx-5 flex h-16 w-full max-w-screen-xl items-center justify-between">
           <Link href="/" className="flex items-center font-display text-3xl">
-            <p className="text-black">drylab</p>
+            <p className="text-foreground">drylab</p>
           </Link>
 
           <div className="flex flex-row space-x-2">
             <a
-              className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-black"
+              className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-foreground bg-foreground px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-foreground"
               href="#contact"
               target="_blank"
               rel="noopener noreferrer"

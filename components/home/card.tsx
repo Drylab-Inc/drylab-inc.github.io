@@ -20,7 +20,7 @@ export function CardSecond({
     >
       <div className="flex h-60 items-start justify-start pb-10">{demo}</div>
       <div className="mx-auto max-w-lg text-center">
-        <h1 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal">
+        <h1 className="bg-gradient-to-br from-foreground to-secondary bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal">
           <ReactMarkdown>{title}</ReactMarkdown>
         </h1>
         <div className="prose-sm mt-3 leading-normal text-gray-500 [text-wrap:balance] md:prose">
@@ -78,7 +78,7 @@ export function Card({
       {/* Content overlay */}
       <div className="relative z-20 flex h-full flex-col justify-end p-6">
         <div className="mx-auto max-w-lg text-center">
-          <h2 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-2xl font-bold text-transparent [text-wrap:balance] hover:underline md:text-4xl">
+          <h2 className="bg-gradient-to-br from-foreground to-secondary bg-clip-text font-display text-2xl font-bold text-transparent [text-wrap:balance] hover:underline md:text-4xl">
             <ReactMarkdown>{title}</ReactMarkdown>
           </h2>
           <div className="prose-lg mt-4 leading-normal text-gray-600 [text-wrap:balance]">
