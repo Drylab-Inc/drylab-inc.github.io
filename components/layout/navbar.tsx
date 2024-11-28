@@ -34,7 +34,7 @@ export default function NavBar() {
               <p>Contact Us</p>
             </a>
 
-            <ModeToggle />
+            {/* <ModeToggle /> */}
           </div>
 
           {/* <SignedOut>
