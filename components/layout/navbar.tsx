@@ -15,8 +15,8 @@ export default function NavBar() {
       <div
         className={`fixed top-0 flex w-full justify-center ${
           scrolled
-            ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
-            : "bg-white/0"
+            ? "border-b border-gray-200 bg-background/50 backdrop-blur-xl"
+            : "bg-background/0"
         } z-30 transition-all`}
       >
         <div className="mx-5 flex h-16 w-full max-w-screen-xl items-center justify-between">
@@ -26,7 +26,7 @@ export default function NavBar() {
 
           <div className="flex flex-row space-x-2">
             <a
-              className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-foreground bg-foreground px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-foreground"
+              className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-foreground bg-foreground px-5 py-2 text-sm text-background transition-colors hover:bg-background hover:text-foreground"
               href="#contact"
               target="_blank"
               rel="noopener noreferrer"

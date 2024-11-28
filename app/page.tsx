@@ -44,7 +44,7 @@ export default async function Home() {
           style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
         >
           <a
-            className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-foreground bg-foreground px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-foreground"
+            className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-foreground bg-foreground px-5 py-2 text-sm text-background transition-colors hover:bg-background hover:text-foreground"
             href="mailto:hi@effie.bio"
             target="_blank"
             rel="noopener noreferrer"
@@ -52,7 +52,7 @@ export default async function Home() {
             <p>Contact Us</p>
           </a>
           <a
-            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-background px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
             href="https://github.com/steven-tey/precedent"
             target="_blank"
             rel="noopener noreferrer"
@@ -125,7 +125,7 @@ export default async function Home() {
         style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
       >
         <a
-          className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border  border-foreground bg-foreground px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-foreground"
+          className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border  border-foreground bg-foreground px-5 py-2 text-sm text-background transition-colors hover:bg-background hover:text-foreground"
           href="mailto:hi@effie.bio"
           target="_blank"
           rel="noopener noreferrer"

@@ -10,7 +10,7 @@ const Alert = ({ preview }: Props) => {
   return (
     <div
       className={cn("border-b dark:bg-slate-800", {
-        "border-neutral-800 bg-neutral-800 text-white": preview,
+        "border-neutral-800 bg-neutral-800 text-background": preview,
         "border-neutral-200 bg-neutral-50": !preview,
       })}
     >
