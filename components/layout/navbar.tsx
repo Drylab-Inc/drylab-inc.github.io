@@ -24,16 +24,19 @@ export default function NavBar() {
             <p className="text-black">drylab</p>
           </Link>
 
-          <a
-            className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-black"
-            href="#contact"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p>Contact Us</p>
-          </a>
+          <div>
+            <a
+              className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-black"
+              href="#contact"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>Contact Us</p>
+            </a>
 
-          <ModeToggle />
+            <ModeToggle />
+          </div>
+
           {/* <SignedOut>
             <SignInButton mode="modal">
               <button className="rounded-full border border-black bg-black px-4 py-1.5 text-sm text-white transition-colors hover:bg-white hover:text-black">
