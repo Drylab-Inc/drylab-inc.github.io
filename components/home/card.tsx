@@ -23,7 +23,7 @@ export function CardSecond({
         <h1 className="bg-gradient-to-br from-foreground to-secondary bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal">
           <ReactMarkdown>{title}</ReactMarkdown>
         </h1>
-        <div className="prose-sm mt-3 leading-normal text-gray-500 [text-wrap:balance] md:prose">
+        <div className="prose-sm mt-3 leading-normal text-secondary [text-wrap:balance] md:prose">
           <ReactMarkdown
             components={{
               a: ({ node, ...props }) => (

@@ -32,7 +32,7 @@ export default async function Home() {
           Your research deserves better software
         </h1>
         <p
-          className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
+          className="mt-6 animate-fade-up text-center text-secondary opacity-0 [text-wrap:balance] md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
           We engineer intelligent software platforms that amplify the pace of
@@ -114,7 +114,7 @@ export default async function Home() {
         Contact Us
       </h1>
       <p
-        className="mt-6 max-w-xl animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
+        className="mt-6 max-w-xl animate-fade-up text-center text-secondary opacity-0 [text-wrap:balance] md:text-xl"
         style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
       >
         Want to enhance a specific research tool or reimagine your scientific
