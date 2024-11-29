@@ -8,7 +8,7 @@ export default async function Home() {
 
     <section>
       <h2>Blog</h2>
-      <ul>
+      {/* <ul>
         {allPostsData.map(({ id, date, title }) => (
           <li key={id}>
             {title}
@@ -18,14 +18,14 @@ export default async function Home() {
             {date}
           </li>
         ))}
-      </ul>
+      </ul> */}
     </section>
     // </Layout>
   );
 }
 
 // Optional: If you want to add metadata
-export const metadata = {
-  title: "Your Home Page Title",
-  description: "Your home page description",
-};
+// export const metadata = {
+//   title: "Your Home Page Title",
+//   description: "Your home page description",
+// };
