@@ -9,9 +9,6 @@ const nextConfig = {
   images: {
     domains: ["lh3.googleusercontent.com", "vercel.com"],
   },
-  experimental: {
-    appDir: true,
-  },
 };
 
 // module.exports = nextConfig;
