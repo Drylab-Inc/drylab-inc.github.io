@@ -1,14 +1,19 @@
 import { getSortedPostsData } from "@/lib/posts";
 
-export default async function Home() {
-  const allPostsData = await getSortedPostsData();
+export default function Page() {
+  return <h1>Hello, Next.js!</h1>;
+}
 
-  return (
-    // <Layout home>
+// export default async function Home() {
+//   const allPostsData = await getSortedPostsData();
 
-    <section>
-      <h2>Blog</h2>
-      {/* <ul>
+//   return (
+// <Layout home>
+
+// <section>
+//   <h2>Blog</h2>
+{
+  /* <ul>
         {allPostsData.map(({ id, date, title }) => (
           <li key={id}>
             {title}
@@ -18,11 +23,12 @@ export default async function Home() {
             {date}
           </li>
         ))}
-      </ul> */}
-    </section>
-    // </Layout>
-  );
+      </ul> */
 }
+// </section>
+// </Layout>
+//   );
+// }
 
 // Optional: If you want to add metadata
 // export const metadata = {
