@@ -158,7 +158,7 @@ const apps = [
   {
     title: "Many more to come",
     description:
-      "After something specific? [Make a Request](mailto:hi@effie.bio)",
+      "Are you looking forward to specific software or tools? [Make a Request](mailto:hi@effie.bio)",
     demo: (
       <div className="p-24">
         <svg
