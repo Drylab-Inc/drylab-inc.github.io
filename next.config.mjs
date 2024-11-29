@@ -10,6 +10,9 @@ const nextConfig = {
   images: {
     domains: ["lh3.googleusercontent.com", "vercel.com"],
   },
+  experimental: {
+    appDir: true,
+  },
   async redirects() {
     return [
       {
@@ -21,9 +24,11 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+// module.exports = nextConfig;
 
-export default withMDX(nextConfig);
+export default withContentlayer(nextConfig);
+
+// export default withMDX(nextConfig);
 // export  withContentlayer({})
 
 // const nextConfig = {
