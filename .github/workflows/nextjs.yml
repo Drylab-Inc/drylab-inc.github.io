@@ -69,6 +69,7 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           static_site_generator: next
+          generator_config_file: ./next.config.mjs
       
       # Replace package manager-specific caching with Next.js cache
       - name: Restore cache
