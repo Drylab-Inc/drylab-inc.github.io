@@ -1,6 +1,10 @@
+import createMDX from "@next/mdx";
+import { withContentlayer } from "next-contentlayer";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   basePath: "/drylab-inc.github.io",
   swcMinify: true,
   images: {
@@ -18,6 +22,9 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
+export default withMDX(nextConfig);
+// export  withContentlayer({})
 
 // const nextConfig = {
 //   output: 'export', // This is crucial for static export
