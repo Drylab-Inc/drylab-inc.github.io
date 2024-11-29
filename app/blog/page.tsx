@@ -1,3 +1,5 @@
+const path = require("path");
+
 import { getStaticProps } from "@/lib/posts";
 
 // export default function Page() {
