@@ -1,11 +1,11 @@
-import { getSortedPostsData } from "@/lib/posts";
+import { getStaticProps } from "@/lib/posts";
 
 // export default function Page() {
 //   return <h1>Hello, Next.js!</h1>;
 // }
 
 export default async function Home() {
-  const allPostsData = await getSortedPostsData();
+  const allPostsData = await getStaticProps();
   console.log("allPostsData: ", allPostsData);
 
   return (
