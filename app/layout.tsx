@@ -25,22 +25,22 @@ export default async function RootLayout({
     <>
       <html lang="en" suppressHydrationWarning>
         <body className={cx(sfPro.variable, inter.variable)}>
-          <ThemeProvider
+          {/* <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
-          >
-            <div className="w-full0 fixed h-screen" />
-            {/* <Suspense fallback="..."> */}
-            <Navbar />
-            {/* </Suspense> */}
-            <main className="flex min-h-screen w-full flex-col items-center justify-center py-32">
-              {children}
-            </main>
-            <Footer />
-            {/* <VercelAnalytics /> */}
-          </ThemeProvider>
+          > */}
+          <div className="w-full0 fixed h-screen" />
+          {/* <Suspense fallback="..."> */}
+          <Navbar />
+          {/* </Suspense> */}
+          <main className="flex min-h-screen w-full flex-col items-center justify-center py-32">
+            {children}
+          </main>
+          <Footer />
+          {/* <VercelAnalytics /> */}
+          {/* </ThemeProvider> */}
         </body>
       </html>
     </>
