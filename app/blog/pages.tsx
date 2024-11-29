@@ -1,4 +1,31 @@
-// `app/page.tsx` is the UI for the `/` URL
-export default function Page() {
-  return <h1>Hello, Home page!</h1>;
+import { getSortedPostsData } from "@/lib/posts";
+
+export default async function Home() {
+  const allPostsData = await getSortedPostsData();
+
+  return (
+    // <Layout home>
+
+    <section>
+      <h2>Blog</h2>
+      <ul>
+        {allPostsData.map(({ id, date, title }) => (
+          <li key={id}>
+            {title}
+            <br />
+            {id}
+            <br />
+            {date}
+          </li>
+        ))}
+      </ul>
+    </section>
+    // </Layout>
+  );
 }
+
+// Optional: If you want to add metadata
+export const metadata = {
+  title: "Your Home Page Title",
+  description: "Your home page description",
+};
