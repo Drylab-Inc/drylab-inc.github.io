@@ -6,13 +6,14 @@ import { getSortedPostsData } from "@/lib/posts";
 
 export default async function Home() {
   const allPostsData = await getSortedPostsData();
+  console.log("allPostsData: ", allPostsData);
 
   return (
     <section>
       <h2>Blog</h2>
       {
         <ul>
-          {allPostsData.map(({ id, date, title }) => (
+          {/* {allPostsData.map(({ id, date, title }) => (
             <li key={id}>
               {title}
               <br />
@@ -20,7 +21,7 @@ export default async function Home() {
               <br />
               {date}
             </li>
-          ))}
+          ))} */}
         </ul>
       }
     </section>
